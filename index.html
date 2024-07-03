@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00d659;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    background-image: url('fruits.jpg');
+    background-size: cover;
+    padding: 100px 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.hero button {
+    background-color: #00d659;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.featured-products, .about-us, .testimonials, .newsletter {
+    padding: 40px 20px;
+    text-align: center;
+}
+.newsletter form input{
+    padding:.5rem 5rem;
+    border-radius: 15px;
+    border: 1px solid green;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.newsletter form button{
+    padding: .5rem 1.5rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #00d659;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.product-card {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #00d659;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://via.placeholder.com/150x50?text=Fruit+Shop+Logo" alt="Fruit Shop Logo" ></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" style="background-image: url('b.jpg');">
+        <h1>Welcome to Fruit Shop!</h1>
+        <p>Fresh and Organic Fruits Delivered to Your Doorstep.</p>
+        <button>Shop Now</button>
+    </section>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200?text=Apple" alt="Apple">
+            <h3>Apple</h3>
+            <p>$1.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200?text=Banana" alt="Banana">
+            <h3>Banana</h3>
+            <p>$0.50</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200?text=Orange" alt="Orange">
+            <h3>Orange</h3>
+            <p>$0.75</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200?text=Strawberry" alt="Strawberry">
+            <h3>Strawberry</h3>
+            <p>$2.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the freshest and most organic fruits available.</p>
+        <img src="https://www.renderhub.com/zjls9933/fruit-shop/fruit-shop-01.jpg" alt="Our Shop" width="800">
+    </section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-PNG-Free-File-Download.png" width="100" alt="Customer 1">
+            <p>"The best fruit shop ever!"</p>
+            <footer>- John Doe</footer>
+        </blockquote>
+        <blockquote>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.WpnGIPj1DKAGo-CP64znTwHaHa&pid=Api&P=0&h=180" width="100" alt="Customer 2">
+            <p>"Amazing quality and fast delivery."</p>
+            <footer>- Jane Smith</footer>
+        </blockquote>
+    </section>
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Sign up for our newsletter to get the latest updates and offers.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>Contact us: 123 Fruit St, Fruitville, FR 12345 | (123) 456-7890 | info@fruitshop</p>
+    </footer>
+</body>
+</html>
